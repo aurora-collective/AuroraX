@@ -1,0 +1,1 @@
+electron-packager . aurorax --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/img/winicon.ico --prune=true --out=release-builds-v1.0.2 --version-string.CompanyName="AuroraX" --version-string.FileDescription="A built in anticheat for AuroraRP Server" --version-string.ProductName="AuroraX"

@@ -1,0 +1,74 @@
+{
+  "name": "AuroraX",
+  "version": "1.0.18",
+  "description": "An anti-cheat system for AuroraRP.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win",
+    "rebuild": "electron-rebuild -f -w keytar"
+  },
+  "keywords": [
+    "aurorarp",
+    "aurorax",
+    "aurora"
+  ],
+  "author": "Curt",
+  "license": "ISC",
+  "dependencies": {
+    "botp": "^2.3.2",
+    "chokidar": "^3.3.0",
+    "directory-tree": "^2.2.4",
+    "ee-machine-id": "^1.0.3",
+    "electron-log": "^3.0.9",
+    "electron-packager": "^14.1.0",
+    "electron-screenshot-app": "^4.0.3",
+    "electron-simple-updater": "^1.5.0",
+    "electron-store": "^5.1.0",
+    "electron-updater": "^4.2.0",
+    "hasha": "^5.1.0",
+    "hotp-totp-generator": "^1.1.3",
+    "hwid": "^0.1.1",
+    "is-reachable": "^3.1.0",
+    "json-find": "^2.0.7",
+    "keytar": "^5.0.0",
+    "machine-uuid": "^1.2.0",
+    "md5-file": "^4.0.0",
+    "otplib": "^11.0.1",
+    "ps-list": "^6.3.0",
+    "request": "^2.88.0",
+    "totp-generator": "0.0.7",
+    "worker-farm": "^1.7.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "electron": "^6.1.4",
+    "electron-builder": "^21.2.0",
+    "electron-builder-squirrel-windows": "^21.2.0",
+    "electron-rebuild": "^1.8.6",
+    "electron-simple-publisher": "^0.6.2",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "build": {
+    "appId": "AuroraX",
+    "productName": "AuroraX",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/uninstall.ico",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": true,
+      "createStartMenuShortcut": true,
+      "packElevateHelper": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "AuroraX",
+      "license": "eula.txt"
+    }
+  }
+}

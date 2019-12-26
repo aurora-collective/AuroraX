@@ -1,0 +1,59 @@
+<!--
+Project Name: AuroraX Anti-Cheat (aurorav.net)
+Language Used: HTML (Template)
+Framework: Electron
+Developer/s: Curt (curt.sg / curtcreation.net)
+All Reserve Rights Curt Creation 2019 - 2020
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>AuroraX</title>
+    <script src="assets/js/window-render.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/window.css" >
+  </head>
+  <body>
+    <header id="titlebar">
+      <div id="drag-region">
+        <div id="window-title">
+          <span id="windowTitle">AuroraX</span>
+        </div>
+        <div id="window-controls">
+          <div class="button" id="min-button">
+            <span>&#xE921;</span>
+          </div>
+          <div class="button" id="max-button">
+            <span>&#xE922;</span>
+          </div>
+          <div class="button" id="restore-button">
+            <span>&#xE923;</span>
+          </div>
+          <div class="button" id="close-button">
+            <span>&#xE8BB;</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="main">
+        <center>
+          <img src="assets/img/logo.png" height="120px"><br>
+          <b>Do not close this or else you will be disconnected in-game.</b><br><br>
+          <b>Your Steam ID: </b><span id="steamID">Unknown</span><br>
+          <b>Your Steam Username: </b><span id="steamUsername">Unknown</span><br>
+          <b>Is FiveM Running? </b><span id="fivemrunning">Nope</span><br>
+          <span id="theNote"></span>
+          <br>
+          <u id="switchuser" style="display:none;">Switch User</u>
+          <br>
+          <b id="ver">Version ...</b>
+          <br>
+          <a href="https://docs.google.com/document/d/1ntDhWXRDBX89jiG3JydP-CXE92CObTOcGuIgkbObzGc" target="_blank" style="color:white;">Terms of Service</a> <a style="color:white;" href="https://docs.google.com/document/d/1SSBngp7PBo6WofcNt1bbXbhoUU01WtliKoQGtKxk_UA" target="_blank">Privacy</a>
+        </center>
+    </div>
+    <script>
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
